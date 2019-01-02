@@ -1,16 +1,18 @@
 """******************************************************************************
-* Purpose: Prime Factors of number
+* Purpose: Monthly loan payment calculator
 *
 * @author: Nikhil Lad
 * @version: 3.7
-* @since: 22-12-2018
+* @since: 26-12-2018
 *
 ******************************************************************************"""
-
 from Utility import utilities
-try:
 
-    a=int(input("enter number to find prime factors"))
-    utilities.prime_factors(a)
+try:
+    p=int(input("enter principle amount"))
+    y=int(input("enter years"))
+    r=float(input("enter rate"))
+    utilities.monthlyPayment(p,y,r)
 except ValueError:
-    print("Enter integer")
+    print("Enter proper values")
+

@@ -1,16 +1,16 @@
 """******************************************************************************
-* Purpose: Prime Factors of number
+* Purpose: To find if two strings are Anagram or not
 *
 * @author: Nikhil Lad
 * @version: 3.7
-* @since: 22-12-2018
+* @since: 24-12-2018
 *
 ******************************************************************************"""
+from  Utility import utilities
 
-from Utility import utilities
 try:
-
-    a=int(input("enter number to find prime factors"))
-    utilities.prime_factors(a)
+    a=input("Enter str1")
+    b=input("Enter str2")
+    utilities.anagrams(a,b)
 except ValueError:
-    print("Enter integer")
+    print("enter strings")

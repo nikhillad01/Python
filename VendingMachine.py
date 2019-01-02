@@ -1,18 +1,13 @@
 """******************************************************************************
-* Purpose: Coin Filp
+* Purpose: Find the Fewest Notes to be returned for Vending Machine
 *
 * @author: Nikhil Lad
 * @version: 3.7
-* @since: 21-12-2018
+* @since: 26-12-2018
 *
 ******************************************************************************
 """
+from  Utility import  utilities
 
-from Utility import utilities
-
-try:
-
-    a=int(input("Enter number of times to flip coin "))
-    utilities.flip_coin(a)
-except Exception :
-    print(Exception)
+a=int(input("enter money"))
+utilities.vendingMachine(a)

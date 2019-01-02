@@ -1,16 +1,17 @@
 """******************************************************************************
-* Purpose: Leap Year
+* Purpose: Stopwatch
 *
 * @author: Nikhil Lad
 * @version: 3.7
-* @since: 21-12-2018
+* @since: 22-12-2018
 *
 ******************************************************************************
 """
+from Utility import  utilities
 
-from Utility import utilities
 try:
-    year=int(input("Enter Year to check leap Year"))
-    utilities.leap_year(year)
+    a=int(input("Enter 1 to start the stop watch"))
+
+    utilities.stop_watch(a)
 except ValueError:
-    print("Enter integer value")
+    print("Not Vald ")
