@@ -1,0 +1,23 @@
+('Buy', 11, datetime.datetime(2019, 1, 9, 11, 39, 55, 728668))
+('Buy', 5, datetime.datetime(2019, 1, 9, 11, 40, 21, 240417))
+Nikhil('Buy', 10, datetime.datetime(2019, 1, 9, 11, 46, 27, 7232))
+nikhil('Buy', 0, datetime.datetime(2019, 1, 9, 11, 53, 28, 956397)
+nikhil('Buy', 1, datetime.datetime(2019, 1, 9, 11, 53, 57, 23444))
+nikhil('Buy', 5, datetime.datetime(2019, 1, 9, 11, 54, 22, 696343)
+nikhil('Buy', 2, datetime.datetime(2019, 1, 9, 11, 57, 56, 911108))
+nikhil('Buy', 0, datetime.datetime(2019, 1, 9, 11, 58, 22, 455605))
+pushkarNone2019-01-09 12:03:37.078897
+sagarNone2019-01-09 12:04:02.614400
+pushkar('Buy', 7)2019-01-09 12:05:26.278012
+Shahzad('Buy', 10)2019-01-09 12:05:51.331047
+Shahzad('Sold', 0)2019-01-09 12:16:08.292287
+nikhil('Buy', 2)2019-01-09 12:16:33.476354
+pushkar('Sold', 11)2019-01-09 12:16:56.531882
+nikhil('Buy', 'TechMahindra')2019-01-09 12:47:37.172338
+jhanvi('Buy', 'Facebook')2019-01-09 12:48:55.089845
+nikhil('Buy', 'Apple')2019-01-09 12:49:27.107691
+jhanvi('Sold', 'Flipkart')2019-01-09 12:50:47.042682
+nikhil('Buy', 'Google', 'Number of shares : ', 1)2019-01-09 12:52:45.115195
+pushkar('Sold', 'TechMahindra', 'Number of shares : ', 1)2019-01-09 12:53:11.481940
+jhanvi('Buy', 'Apple', 'Number of shares : ', 1)2019-01-09 12:53:28.555458
+sagar('Sold', 'Alphabet', 'Number of shares : ', 2)2019-01-09 12:53:41.617971

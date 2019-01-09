@@ -1,0 +1,122 @@
+{
+  "Rice": [
+    {
+      "name": "Basmati",
+      "Weight": 1,
+      "Price": 100,
+      "quantity": 100
+    },
+    {
+      "name": "kolam",
+      "Weight": 1,
+      "Price": 60,
+      "quantity": 100
+    },
+    {
+      "name": "tukda",
+      "Weight": 1,
+      "Price": 40,
+      "quantity": 100
+    },
+    {
+      "name": "Brown",
+      "Weight": 1,
+      "Price": 200,
+      "quantity": 100
+    },
+    {
+      "name": "new basmati",
+      "Weight": 1,
+      "Price": 50,
+      "quantity": 100
+    },
+    {
+      "name": "bhat",
+      "Weight": 1,
+      "Price": 50,
+      "quantity": 100
+    },
+    {
+      "name": "kolam",
+      "Weight": 1,
+      "Price": 50,
+      "quantity": 100
+    }
+  ],
+  "Pulses": [
+    {
+      "name": "toor",
+      "Weight": 1,
+      "Price": 100,
+      "quantity": 100
+    },
+    {
+      "name": "masoor",
+      "Weight": 1,
+      "Price": 80,
+      "quantity": 100
+    },
+    {
+      "name": "chana",
+      "Weight": 1,
+      "Price": 70,
+      "quantity": 100
+    },
+    {
+      "name": "moog",
+      "Weight": 1,
+      "Price": 10,
+      "quantity": 100
+    },
+    {
+      "name": "red pulses",
+      "Weight": 1,
+      "Price": 50,
+      "quantity": 100
+    }
+  ],
+  "Wheat": [
+    {
+      "name": "Grain",
+      "Weight": 1,
+      "Price": 50,
+      "quantity": 100
+    },
+    {
+      "name": "Broken Wheat",
+      "Weight": 1,
+      "Price": 40,
+      "quantity": 100
+    },
+    {
+      "name": "Wheat Meal",
+      "Weight": 1,
+      "Price": 70,
+      "quantity": 100
+    },
+    {
+      "name": "Red Winter Wheat",
+      "Weight": 1,
+      "Price": 10,
+      "quantity": 100
+    },
+    {
+      "name": "red wheat",
+      "Weight": 1,
+      "Price": 50,
+      "quantity": 200
+    },
+    {
+      "name": "bajri",
+      "Weight": 1,
+      "Price": 70,
+      "quantity": 100
+    },
+    {
+      "name": "black wheat",
+      "Weight": 1,
+      "Price": 100,
+      "quantity": 500
+    }
+  ]
+}
