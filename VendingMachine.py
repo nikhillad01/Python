@@ -1,20 +1,22 @@
 """******************************************************************************
-* Purpose: Euclidien Distance
+* Purpose: Find the Fewest Notes to be returned for Vending Machine
 *
 * @author: Nikhil Lad
 * @version: 3.7
-* @since: 22-12-2018
+* @since: 26-12-2018
 *
 ******************************************************************************
 """
-from Utility import utilities
+from  Utility import  utilities
 u=utilities.util()
-def euclidien():
+def vending_machine():
     try:
-        x=int(input("enter X"))
-        y=int(input("enter Y"))
-        u.euclidien(x,y)
+        a=int(input("enter money"))
     except ValueError:
-        print("Enter integer value")
+        print("Enter only integer values.")
+
+    u.vendingMachine(a)
+
+
 if __name__=="__main__":
-    euclidien()
+    vending_machine()

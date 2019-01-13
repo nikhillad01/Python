@@ -1,20 +1,25 @@
 """******************************************************************************
-* Purpose: Prime Factors of number
+* Purpose: Quadratic.py
 *
 * @author: Nikhil Lad
 * @version: 3.7
 * @since: 22-12-2018
 *
 ******************************************************************************"""
-
 from Utility import utilities
 u=utilities.util()
-def prime_facs():
-    """This method is used to take the inputs to find the prime factors in a range ."""
+def quadratic():
+
+    """This method is used to take inputs  to find quadratic equation ."""
+
     try:
-        a=int(input("enter number to find prime factors"))
+        a=int(input("Enter A"))
+        b=int(input("Enter B"))
+        c=int(input("Enter C"))
     except ValueError:
-        print("Enter integer")
-    u.prime_factors(a)
+        print("Not valid Values ")
+
+    utilities.quadratic(a, b, c)
+
 if __name__=="__main__":
-    prime_facs()
+    quadratic()

@@ -1,19 +1,20 @@
 """******************************************************************************
-* Purpose: Coupoun
+* Purpose: Binary to Decimal and vice-versa operations
 *
 * @author: Nikhil Lad
 * @version: 3.7
-* @since: 24-12-2018
+* @since: 27-12-2018
+*
 ******************************************************************************
 """
 from Utility import utilities
 u=utilities.util()
-def coupoun_number():
+def to_binary():
     try:
-        coupounNumber=int(input("Enter coupoun number"))
-        u.coupoun(coupounNumber)
+        a=int(input("Enter Decimal number"))
     except ValueError:
-        print("Please Enter Valid Integer code")
+        print("enter decimal number only")
+    u.toBinary(a)
 
-if __name__ == "__main__":
-    coupoun_number()
+if __name__=="__main__":
+    to_binary()

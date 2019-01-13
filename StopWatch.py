@@ -1,5 +1,5 @@
 """******************************************************************************
-* Purpose: Euclidien Distance
+* Purpose: Stopwatch
 *
 * @author: Nikhil Lad
 * @version: 3.7
@@ -7,14 +7,15 @@
 *
 ******************************************************************************
 """
-from Utility import utilities
+from Utility import  utilities
 u=utilities.util()
-def euclidien():
+def stop_Watch():
+    """this file is used to take input for stop watch"""
     try:
-        x=int(input("enter X"))
-        y=int(input("enter Y"))
-        u.euclidien(x,y)
+        a=int(input("Enter 1 to start the stop watch"))
     except ValueError:
-        print("Enter integer value")
+        print("Not Vald ")
+    u.stop_watch(a)
+
 if __name__=="__main__":
-    euclidien()
+    stop_Watch()

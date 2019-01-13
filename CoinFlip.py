@@ -1,6 +1,22 @@
+"""******************************************************************************
+* Purpose: Coin Filp
+*
+* @author: Nikhil Lad
+* @version: 3.7
+* @since: 21-12-2018
+*
+******************************************************************************
+"""
+
 from Utility import utilities
-from Utility import *
+u=utilities.util()
+def coin_flip():
+    try:
 
+        a=int(input("Enter number of times to flip coin "))
+        u.flip_coin(a)
+    except Exception as e:
+        print(e)
 
-a=int(input("Enter number of times to flip coin "))
-utilities.flipCoin(a)
+if __name__ == "__main__":
+    coin_flip()

@@ -1,20 +1,20 @@
 """******************************************************************************
-* Purpose: Prime Factors of number
+* Purpose: To find if two strings are Anagram or not
 *
 * @author: Nikhil Lad
 * @version: 3.7
-* @since: 22-12-2018
+* @since: 24-12-2018
 *
 ******************************************************************************"""
 
 from Utility import utilities
 u=utilities.util()
-def prime_facs():
-    """This method is used to take the inputs to find the prime factors in a range ."""
+def bubble_sort():
     try:
-        a=int(input("enter number to find prime factors"))
+        l=list(input("Enter elements without space or comma"))      # inputs from user
+        u.bubble_sort(l)
     except ValueError:
-        print("Enter integer")
-    u.prime_factors(a)
+        print("Enter valid values")
+
 if __name__=="__main__":
-    prime_facs()
+    bubble_sort()
