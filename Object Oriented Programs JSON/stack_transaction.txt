@@ -1,13 +1,9 @@
-('Buy', 11, datetime.datetime(2019, 1, 9, 11, 39, 55, 728668))
-('Buy', 5, datetime.datetime(2019, 1, 9, 11, 40, 21, 240417))
 Nikhil('Buy', 10, datetime.datetime(2019, 1, 9, 11, 46, 27, 7232))
 nikhil('Buy', 0, datetime.datetime(2019, 1, 9, 11, 53, 28, 956397)
 nikhil('Buy', 1, datetime.datetime(2019, 1, 9, 11, 53, 57, 23444))
 nikhil('Buy', 5, datetime.datetime(2019, 1, 9, 11, 54, 22, 696343)
 nikhil('Buy', 2, datetime.datetime(2019, 1, 9, 11, 57, 56, 911108))
 nikhil('Buy', 0, datetime.datetime(2019, 1, 9, 11, 58, 22, 455605))
-pushkarNone2019-01-09 12:03:37.078897
-sagarNone2019-01-09 12:04:02.614400
 pushkar('Buy', 7)2019-01-09 12:05:26.278012
 Shahzad('Buy', 10)2019-01-09 12:05:51.331047
 Shahzad('Sold', 0)2019-01-09 12:16:08.292287
@@ -21,3 +17,8 @@ nikhil('Buy', 'Google', 'Number of shares : ', 1)2019-01-09 12:52:45.115195
 pushkar('Sold', 'TechMahindra', 'Number of shares : ', 1)2019-01-09 12:53:11.481940
 jhanvi('Buy', 'Apple', 'Number of shares : ', 1)2019-01-09 12:53:28.555458
 sagar('Sold', 'Alphabet', 'Number of shares : ', 2)2019-01-09 12:53:41.617971
+nikhil('Buy', 'Google', 'Number of shares : ', 1)2019-01-10 14:29:29.844800
+nikhil('Buy', 'Google', 'Number of shares : ', 1)2019-01-10 14:29:48.112721
+nikhil('Buy', 'Google', 'Number of shares : ', 10)2019-01-10 15:56:46.676492
+nikhil('Buy', 'Google', 'Number of shares : ', 10)2019-01-10 15:57:06.677347
+nikhil('Buy', 'Microsoft', 'Number of shares : ', 1)2019-01-10 15:58:30.128933

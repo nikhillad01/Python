@@ -2,22 +2,22 @@
   "Stock Report": [
     {
       "Stock Name": "Google",
-      "Number of Share": 26,
+      "Number of Share": 118,
       "Share Price": 1000
     },
     {
       "Stock Name": "Microsoft",
-      "Number of Share": 16,
+      "Number of Share": 15,
       "Share Price": 1000
     },
     {
       "Stock Name": "IBM Company",
-      "Number of Share": 20,
+      "Number of Share": 29,
       "Share Price": 1000
     },
     {
       "Stock Name": "Facebook",
-      "Number of Share": 9,
+      "Number of Share": 10,
       "Share Price": 1000
     },
     {
@@ -27,12 +27,12 @@
     },
     {
       "Stock Name": "Flipkart",
-      "Number of Share": 9,
+      "Number of Share": 8,
       "Share Price": 10000
     },
     {
       "Stock Name": "Apple",
-      "Number of Share": 47,
+      "Number of Share": 49,
       "Share Price": 2000
     },
     {
@@ -42,7 +42,7 @@
     },
     {
       "Stock Name": "BridgeLabs",
-      "Number of Share": 80,
+      "Number of Share": 90,
       "Share Price": 1000
     },
     {
@@ -57,13 +57,13 @@
     },
     {
       "Stock Name": "Alphabet",
-      "Number of Share": 103,
+      "Number of Share": 110,
       "Share Price": 1000
     },
     {
-      "Stock Name": "SSNPJR",
-      "Number of Share": 1100,
-      "Share Price": 10
+      "Stock Name": "TATA",
+      "Number of Share": 100,
+      "Share Price": 1000
     }
   ]
 }

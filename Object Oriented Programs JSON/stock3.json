@@ -1,0 +1,38 @@
+
+{
+    "Google" : [
+                    {
+                        "name" : "gmail",
+                        "price" : 2000,
+                        "shares" : 52
+                    },
+                    {
+                        "name" : "youtube",
+                        "price" : 7000,
+                        "shares"  : 70
+                    },
+                    {
+                        "name" : "scolar",
+                        "price" : 500,
+                        "shares"  : 99
+                    }
+                ],
+    "Apple" :   [
+                    {
+                        "name" : "ipad",
+                        "price" : 6000,
+                        "shares" : 7
+                    },
+                    {
+                        "name" : "macbook",
+                        "price" : 13000,
+                        "shares"  : 10
+                    },
+                    {
+                        "name" : "iphone",
+                        "price" : 8000,
+                        "shares"  : 90
+                    }
+                ]
+}
+

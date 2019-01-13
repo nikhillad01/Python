@@ -1,26 +1,26 @@
+
 """******************************************************************************
-* Purpose: Stack Program using Stack.
+* Purpose: Stock Program  using Queue .
 *
 * @author: Nikhil Lad
 * @version: 3.7
-* @since: 5-1-2018
+* @since: 10-1-2019
 
 ******************************************************************************
 """
 
-from DSA.DSA_Utilities import Stack
+from DSA.DSA_Utilities import Queue
 import datetime
 
 import json
 class Person:
-
+    try:
         def __init__(self):
             """constructor of class reads stock and customer json file ."""
-            try:
-                with open('../JSON/stock.json', "r") as stock_jf:
-                    stock_jf = json.load(stock_jf)  # load() convert file into python from json
-            except FileNotFoundError:
-                print("file not found")
+
+            with open('../JSON/stock.json', "r") as stock_jf:
+                stock_jf = json.load(stock_jf)  # load() convert file into python from json
+
             self.stock_jf = stock_jf
             with open("../JSON/customers.json", "r") as person_json_value:
                 person_json_value = json.load(person_json_value)
@@ -38,7 +38,7 @@ class Person:
 
             """This method is used to check the user is valid or not"""
 
-            print("***************** Welcome *******************")
+            print("*********** Welcome **************")
             i=0
             name=input("Enter Username")
             while i<len(self.person_json_value["Person"]):
@@ -108,24 +108,17 @@ class Person:
                     #t=str(s.push(("Buy",choice,dt)))
                     #print(t)
                     s.push(("Buy",self.stock_jf["Stock Report"][choice]["Stock Name"],"Number of shares : ",buy_share))
-
-                    try:
-                        with open("../JSON/stack_transaction.txt","a")as txt:
-                            txt.write(name+str(s.show())+str(dt)+"\n")
-                    except FileNotFoundError:
-                        print("File Not found")
-
+                    with open("../JSON/stack_transaction.txt","a")as txt:
+                        txt.write(name+str(s.show())+str(dt)+"\n")
                     print("stack show")
                     s.show()
                     s1.push("B")
                     s1.show()
-                    try:
-                        with open("../JSON/customers.json", "w") as jf:
-                            self.person_json_value['Person'][index]['Total Balance'] = person_updated_balance
-                            self.person_json_value['Person'][index]['Number of Share'] = person_updated_share
-                            jf.write(json.dumps(self.person_json_value,indent=2))
-                    except FileNotFoundError:
-                        print("File not found.")
+                    with open("../JSON/customers.json", "w") as jf:
+                        self.person_json_value['Person'][index]['Total Balance'] = person_updated_balance
+                        self.person_json_value['Person'][index]['Number of Share'] = person_updated_share
+                        jf.write(json.dumps(self.person_json_value))
+
 
             else:print("You Don't have enough money ")
 
@@ -161,9 +154,9 @@ class Person:
             # t=str(s.push(("Buy",choice,dt)))
             # print(t)
             s.push(("Sold", self.stock_jf["Stock Report"][choice]["Stock Name"],"Number of shares : ",sell_share))
-            with open("../stack_transaction.txt", "a")as txt:
+            with open("../stack_transaction.txt", "a") as txt:
                 txt.write(name + str(s.show()) + str(st) + "\n")
-            print("stack show")
+            print("Queue show")
             s.show()
             s1.push("S")
             s1.show()
@@ -174,10 +167,12 @@ class Person:
 
 
 
+    except Exception as e:
+        print(e)
 
 
-s=Stack()
-s1=Stack()
+s=Queue()
+s1=Queue()
 
 if __name__ == "__main__":
    while True:

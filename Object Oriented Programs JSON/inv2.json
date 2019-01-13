@@ -7,13 +7,13 @@
       "quantity": 100
     },
     {
-      "name": "kolam",
+      "name": "red basmati",
       "Weight": 1,
       "Price": 60,
       "quantity": 100
     },
     {
-      "name": "tukda",
+      "name": "brown basmati",
       "Weight": 1,
       "Price": 40,
       "quantity": 100
@@ -25,53 +25,35 @@
       "quantity": 100
     },
     {
-      "name": "new basmati",
+      "name": "bb",
       "Weight": 1,
-      "Price": 50,
-      "quantity": 100
-    },
-    {
-      "name": "bhat",
-      "Weight": 1,
-      "Price": 50,
-      "quantity": 100
-    },
-    {
-      "name": "kolam",
-      "Weight": 1,
-      "Price": 50,
-      "quantity": 100
+      "Price": 10,
+      "quantity": 1000
     }
   ],
   "Pulses": [
     {
-      "name": "toor",
+      "name": "red pulse",
       "Weight": 1,
       "Price": 100,
       "quantity": 100
     },
     {
-      "name": "masoor",
+      "name": "white pulse",
       "Weight": 1,
       "Price": 80,
       "quantity": 100
     },
     {
-      "name": "chana",
+      "name": "black pulse",
       "Weight": 1,
       "Price": 70,
       "quantity": 100
     },
     {
-      "name": "moog",
+      "name": "yellow pulse",
       "Weight": 1,
       "Price": 10,
-      "quantity": 100
-    },
-    {
-      "name": "red pulses",
-      "Weight": 1,
-      "Price": 50,
       "quantity": 100
     }
   ],
@@ -99,24 +81,6 @@
       "Weight": 1,
       "Price": 10,
       "quantity": 100
-    },
-    {
-      "name": "red wheat",
-      "Weight": 1,
-      "Price": 50,
-      "quantity": 200
-    },
-    {
-      "name": "bajri",
-      "Weight": 1,
-      "Price": 70,
-      "quantity": 100
-    },
-    {
-      "name": "black wheat",
-      "Weight": 1,
-      "Price": 100,
-      "quantity": 500
     }
   ]
 }
