@@ -94,32 +94,15 @@ class linked_list:                      # wrapper class for node class. user wil
             previous.set_next(current.get_next())  # setting the next element of currents previous element to the currents next element.
 
     def write(self, elemenst):
-        f1 = open('/home/admin1/PycharmProjects/BridgeLabzDemo/Utility/abc.txt', 'w')       # clean file.
+        f1 = open('../Utility/abc.txt', 'w')       # clean file.
         f1.close()
-        with open('/home/admin1/PycharmProjects/BridgeLabzDemo/Utility/abc.txt', 'a') as f:
+        with open('../Utility/abc.txt', 'a') as f:
+
             f.write(','.join(str(word) for word in elemenst))
             #exit()
 
 
 my_list = linked_list()
-#
-# file = open("/home/admin1/PycharmProjects/BridgeLabzDemo/Utility/abc.txt",          # read data from file.
-#             'r')  # Open the file in Read mode into variable file
-# d = file.read().split(",")  # Read the file seperate by ,
-# d[-1] = d[-1].strip()
-#
-# word_list = []
-# newd = str(d).strip('[]')                       # clean data
-# for word in d:
-#     word_list.append(word)
-#
-# print('elements from  file : ', word_list)
-#
-# for i in word_list:
-#     my_list.add(i)
-# print("data in linked list")
-# my_list.display()
-
 my_list.display()
 
 

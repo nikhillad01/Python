@@ -9,7 +9,7 @@
 class node:
     def __init__(self, data=None, next=None):
         self.data = data                # data node
-        self.next = None                # last element of list will alwasys has none .
+        self.next = None                # last element of list will always has none .
         self.next_node = next
 
     def get_data(self):                  # gets the data of node
@@ -75,10 +75,10 @@ class linked_list:                      # wrapper class for node class. user wil
         return current
 
     def delete(self, data, elemenst):
-        current = self.head
+        current = self.head             # starts from head node.
         previous = None
         found = False
-        while current and found is False:
+        while current and found is False:       # iterate till current and found is false.
             if current.get_data() == data:
                 found = True
 
@@ -90,12 +90,12 @@ class linked_list:                      # wrapper class for node class. user wil
         if previous is None:
             self.head = current.get_next()
         else:
-            previous.set_next(current.get_next())
+            previous.set_next(current.get_next())       # sets the previous element address to currents next element .
 
     def write(self, elemenst):
-        f1 = open('/home/admin1/PycharmProjects/BridgeLabzDemo/Utility/test.txt', 'w')
+        f1 = open('../Utility/test.txt', 'w')
         f1.close()
-        with open('/home/admin1/PycharmProjects/BridgeLabzDemo/Utility/test.txt', 'a') as f:
+        with open('../Utility/test.txt', 'a') as f:
             elemenst.sort()
             f.write(','.join(str(word) for word in elemenst))
             #exit()
@@ -104,7 +104,7 @@ class linked_list:                      # wrapper class for node class. user wil
 # elemenst=[]
 my_list = linked_list()
 
-file = open("/home/admin1/PycharmProjects/BridgeLabzDemo/Utility/test.txt",
+file = open("../Utility/test.txt",
             'r')  # Open the file in Read mode into variable file
 d = file.read().split(",")  # Read the file seperate by ,
 d[-1] = d[-1].strip()
@@ -121,14 +121,8 @@ for i in word_list:
 print("data in linked list")
 my_list.display()
 
-# findword=input("Enter the element to search ")
-# my_list.search(findword)
 
 my_list.display()
-# print(type(d))
-
-
-# my_list.display()
 
 
 

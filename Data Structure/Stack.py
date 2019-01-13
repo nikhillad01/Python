@@ -38,15 +38,15 @@ class Stack:
 s = Stack()                         # Stack class object.
 
 
-exp = "(5+6)∗(7+8)/(4+3)(5+6)∗(7+8)/(4+3)"  # Expression to find Balanced Parentheses.
+exp = "{[(5+6)∗(7+8)/(4+3)(5+6)∗(7+8)/(4+3)]}"  # Expression to find Balanced Parentheses.
 
 
 for i in exp:
-    if i == '(':                     # if i=='(' then push that into the stack.
+    if i == '(' or i== '{'  or i== '[':                     # if i=='(' then push that into the stack.
         s.push(i)
         print(s.show())
 
-    elif i == ')':                   # if i==')' Check if stack is empty , if stack is empty then we have only ')' left so the expression is not correctly  parenthesized.
+    elif i == ')'or i== '}' or i== ']':                   # if i==')' Check if stack is empty , if stack is empty then we have only ')' left so the expression is not correctly  parenthesized.
         if s.isEmpty():
             is_balanced = False
             break

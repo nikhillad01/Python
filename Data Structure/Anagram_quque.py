@@ -10,7 +10,7 @@
 from DSA import DSA_Utilities   # import queue class from DSA_utilities.
 st=DSA_Utilities.Queue()        # create instance of DSA_Utilities.Queue() .
 
-class Stack:                # Queue class
+class Stack:                    # Queue class
     def __init__(self):
         self.prime_list = []
 
@@ -32,10 +32,10 @@ class Stack:                # Queue class
         """
         #anagrams = []
         self.prime_list=[str(i) for i in self.prime_list]
-        for i in range(0,len(self.prime_list)):
-            for j in range (i+1,len(self.prime_list)):
-                if sorted(self.prime_list[i])==sorted(self.prime_list[j]):
-                    st.enqueue(self.prime_list[i])
+        for i in range(0,len(self.prime_list)):             # loop will start from 0 till end
+            for j in range (i+1,len(self.prime_list)):      # loop from i+1 to end.
+                if sorted(self.prime_list[i])==sorted(self.prime_list[j]):  # i and j elements are sorted and compared with each others .
+                    st.enqueue(self.prime_list[i])          # adds number in queue
                     st.enqueue(self.prime_list[j])
         # for i in self.prime_list:
         #      st.enqueue(i)              # adds the number in queue.

@@ -15,10 +15,13 @@ class Stack:                        # Stack class
         self.prime_list = []
 
     def get_prime(self):             # method to find prime numbers in range
+        """
+        This method is used to print prime  number.
+       """
         for num in range(0, 1000 + 1):
                                      # prime numbers are greater than 1
             if num > 1:
-                for i in range(2, num):
+                for i in range(2, num):  # check for prime number .
                     if (num % i) == 0:
                         break
                 else:
@@ -32,10 +35,10 @@ class Stack:                        # Stack class
 
         anagrams = []
         self.prime_list = [str(i) for i in self.prime_list]
-        for i in range(0, len(self.prime_list)):
-            for j in range(i + 1, len(self.prime_list)):
-                if sorted(self.prime_list[i]) == sorted(self.prime_list[j]):
-                    st.push(self.prime_list[i])
+        for i in range(0, len(self.prime_list)):    # loop will start from 0 till end
+            for j in range(i + 1, len(self.prime_list)):    # loop from i+1 to end.
+                if sorted(self.prime_list[i]) == sorted(self.prime_list[j]):    # i and j elements are sorted and compared with each others .
+                    st.push(self.prime_list[i])         # push element in stack.
                     st.push(self.prime_list[j])
 
         for i in range(0, st.size()):

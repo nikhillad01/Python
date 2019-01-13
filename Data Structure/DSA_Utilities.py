@@ -10,6 +10,8 @@
 
 """This file contains  Classes of Stack and Queue"""
 
+"""OOPS concept used Polymorphism : method overriding
+i.e. same method name , different class, with same parameters"""
 
 class Node:
     def __init__(self, data, next=None):
@@ -27,7 +29,8 @@ class Stack:
 
     """
         This is the Stack class to create Stack.
-        """
+        
+    """
 
 
     def push(self, data):
@@ -89,7 +92,7 @@ class Stack:
     def pop(self):
         """
                    This method is used to delete last data which is inserted into the stack.
-                   actually stack follow the Last in First Out order Principle to pop the data fromthe stack
+                   actually stack follow the LIFO principle to pop the data from the stack
                    :return: this will return the data that will be removed
                    """
 
@@ -147,7 +150,7 @@ class Queue:
         self.day = ['S', ' M', ' T', ' W', ' Th', 'F', ' S']
         self.calender_q=[]
 
-    def enqueue(self,data):           # Method to append the data in queue.
+    def push(self,data):           # Method to append the data in queue.
 
         """
                 This method is used to insert data in the Queue .
@@ -182,7 +185,7 @@ class Queue:
             size += 1                       # increment the size.
         return size
 
-    def dequeue(self):
+    def pop(self):
         """
         This method is used to delete data from the Queue.
         data will deleted according to FIFO principle

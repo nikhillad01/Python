@@ -8,12 +8,14 @@
 ******************************************************************************"""
 
 def calender(month, year):
+    """
+          This Class is used for calender .
+         """
 
 
+    day = ['S', ' M', ' T', ' W', ' Th', 'F', ' S']         # days (used for headings of calender .)
 
-    day = ['S', ' M', ' T', ' W', ' Th', 'F', ' S']
-
-    days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]    # list of total days in months.
 
     values = 1              # start date
     d = 1
@@ -32,7 +34,7 @@ def calender(month, year):
 
     print('Calender of Month \n')
 
-    for i in range(0, 7):           # Heading of calender
+    for i in range(0, 7):           # prints Heading of calender
         print(day[i], end=' ')
     print()
 
@@ -42,7 +44,7 @@ def calender(month, year):
 
             if values <= days[m-1]:
                 if i == 0 and j < d0:
-                    two_d_array[i][j] = ' '         # if the date starts from middle of week  i.e. Thursday , make all days from monday to wed as ' ' .
+                    two_d_array[i][j] = ' '   # if the date starts from middle of week  i.e. Thursday , make all days from monday to wed as ' ' .
                     continue
 
                 two_d_array[i][j] = values

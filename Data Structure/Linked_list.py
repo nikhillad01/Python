@@ -1,6 +1,15 @@
-
+"""******************************************************************************
+* Purpose: Linked list Utility.
+*
+* @author: Nikhil Lad
+* @version: 3.7
+* @since: 02-01-2019
+*
+******************************************************************************"""
 class node:
     def __init__(self, data=None, next=None):
+        """
+               This is constructor of class"""
         self.data = data                # data node
         self.next = None                # last element of list will always has none .
         self.next_node = next
@@ -20,78 +29,48 @@ class linked_list:                      # wrapper class for node class. user wil
         self.head = node()              # never gonna contain any actual data and not indexable.  simply used as placeholder to allow us to point to first node.
 
     def add(self, data):                # appends  element to list
+        """
+        This method is used to insert data in linked list.
+               """
         new_node = node(data)           # creates a new node using class node .
         current = self.head             # point to start iteration from ... first node
         while current.next != None:     # while next element  is not Null
             current = current.next      # sets the current node to next node
         current.next = new_node         # create  the new node after current node
 
-    # def length(self):                   # calculates length of list
-    #     current = self.head             # at start nodes starts from Head
-    #     total = 0                       # variable to count the nodes.
-    #
-    #     while current:                  # while current = True
-    #         total += 1                  # incrementing total.
-    #         current = current.get_next()  # current element = next element until loop finishes
-    #     return total
 
     def display(self):                  # to display list
+        """
+                This method is used to display data from linked list.
+        """
 
         elemenst = []                   # list to store list members.
-        current_node = self.head
-        while current_node.next != None:
-            current_node = current_node.next
-            elemenst.append(current_node.data)
+        current_node = self.head            # starts from head node.
+        while current_node.next != None:    # iterates till end of list .
+            current_node = current_node.next    # sets current node = next node
+            elemenst.append(current_node.data)  # appends data of current node to list.
         print('data in linked list ', elemenst)
         return elemenst
-        # findword = input("Enter the element to search ")
-        # my_list.search(findword, elemenst)
-        # ans = int(input("want to write data in file "))
-        # if ans == 1:
-        #     my_list.write(elemenst)
-        # else:exit()
 
-    # def search(self, data, elemenst):
-    #     current = self.head
-    #     found = False
-    #     while current and found is False:       # loop will run till current and found is False.
-    #         if current.get_data() == data:      # if data found in list delete data .
-    #             found = True
-    #             print("Element found ")
-    #             my_list.delete(data, elemenst)
-    #             print("Element deleted: ")
-    #             my_list.write(elemenst)
-    #         else:
-    #             current = current.get_next()    #  checking for next element.
-    #     if current is None:
-    #         print("Data was not in list and added to list")  # if data is not in list add the data.
-    #         my_list.add(data)
-    #     return current
 
     def delete(self, data, elemenst):
-        current = self.head
-        previous = None
+        current = self.head         # starts from head node.
+        previous = None             # set previous element as none
         found = False
-        while current and found is False:
-            if current.get_data() == data:
+        while current and found is False:       # iterate till while current and found is false
+            if current.get_data() == data:      # if data found then make Found element True.
                 found = True
 
             else:
-                previous = current
+                previous = current          # else make current element as previous and next element as current .
                 current = current.get_next()
-        if current is None:
+        if current is None:         # if data not found till end .
             print("Data not in list")
         if previous is None:
             self.head = current.get_next()
         else:
             previous.set_next(current.get_next())  # setting the next element of currents previous element to the currents next element.
 
-    # def write(self, elemenst):
-    #     f1 = open('/home/admin1/PycharmProjects/BridgeLabzDemo/Utility/abc.txt', 'w')       # clean file.
-    #     f1.close()
-    #     with open('/home/admin1/PycharmProjects/BridgeLabzDemo/Utility/abc.txt', 'a') as f:
-    #         f.write(','.join(str(word) for word in elemenst))
-    #         #exit()
 
 
 my_list = linked_list()

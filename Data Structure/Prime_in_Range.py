@@ -1,4 +1,13 @@
-from DSA import  DSA_Utilities
+"""********Prime Numbers in range .
+*
+* @author: Nikhil Lad
+* @version: 3.7
+* @since: 24-12-2018
+*
+******************************************************************************"""
+
+
+from DSA import DSA_Utilities
 o=DSA_Utilities.Stack()
 import numpy as np
 class prime_two_d:
@@ -14,7 +23,7 @@ class prime_two_d:
                 else:
                     #print(num)
                     self.prime_list.append(num)
-                   # o.push(num)
+                    o.push(num)
         #return num
 
        # print(self.prime_list)
@@ -23,7 +32,7 @@ class prime_two_d:
         row = 10
         column = 25
         limit = 100
-        two_d_array = [[0 for j in range(column)] for i in range(row)]
+        two_d_array = [[0 for j in range(column)] for i in range(row)]  # list comprehensions to print empty matrix.
        # print(two_d_array)
         k = 0
 
@@ -88,7 +97,7 @@ class prime_two_d:
         print()
         print("Not Anagrams and Not Prime : ")
         print(not_anagrams)
-
+#o.show()
 try:
     p=prime_two_d()
     p.get_prime()
